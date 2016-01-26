@@ -1,0 +1,30 @@
+1. ls= <directory name>: List contents of a directory
+2. Cd: Go home
+3. cd <directory name>: change directory
+4. cd ..: Go up
+5. cat <file name>: view contents of a file
+6. gedit <file name> &: creates a new file or opens up a file that already exists
+7. git clone --config="http.proxy=http://uname:pword@192.168.2.1:8080" http://url-to-your-repo: cloning the file to the computer
+8. git status: shows what you did/modified
+9. git add <file name>: to start tracking new files and also to stage changes to already tracked files
+10. git commit -m "Commit Comment": records changes to the repository
+11.git push: push your new branches and data to a remote repository
+12 sftp username@cmis-hsteacher= transfer files
+13. cd public_html=to put file into public file
+14.rm=remove file
+15 put filename=put file
+16 rm *= remove all file
+17 put *= put all file
+18 !ls=every file in Mr. Kieffer's
+19 pwd=present working directory- to see what file we are in
+20. exit=exit sftp
+21. python....=See the file on website
+22. http://cmis-hsteacher/~fame1772=Will see file if the index file is there
+23. localhost:8000=see file on website
+24. localhost:8000/filename=see particular file on website
+25.http://cmis-hsteacher/~fame1772/file
+26.http://cmis-hsteacher/~fame1772/file/file
+27. mkdir= make directory
+28. blue text=folder
+29. rmdir=remove file
+30. git add foldername/filename=to add a file in a folder
