@@ -28,3 +28,6 @@
 28. blue text=folder
 29. rmdir=remove file
 30. git add foldername/filename=to add a file in a folder
+31. control d=exit python
+32. .py=python script
+33. printing texts need quotations
