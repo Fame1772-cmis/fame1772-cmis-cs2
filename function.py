@@ -37,3 +37,16 @@ def avg_volume (a, b):
 	 return ((1.0/6 * math.pi * a**3) + (1.0/6 * math.pi * b**3)) /2
 print avg_volume(10, 20)
 
+def area (a, b, c):
+	return math.sqrt (2.75*(2.75-a)*(2.75-b)*(2.75-c))
+print area (1.0, 2.0, 2.5)
+def right_align (word):
+	return (80-len(word))*(" ")+word
+print right_align ("Hello")
+
+def center (word):
+	return (40-len(word))*(" ")+word
+print center ("Hello")
+def msg_box (word):
+    return msg_box(word)
+print ("Hello")
