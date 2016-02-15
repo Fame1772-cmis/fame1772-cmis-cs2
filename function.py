@@ -50,5 +50,9 @@ def center (word):
 print center ("Hello")
 
 def msg_box (word):
-    return "+" + ((len(word)+4)"-")+"+"+"\n"+"|
-print ("Hello")
+    return "+" + ((len(word)+ 4)*"-") + "+" + "\n" + "|" + (2*" ") + (word) + (2*" ") + "|" + "\n" + "+" + ((len(word) +4)*"-") + "+"
+print msg_box ("Hello")
+
+def msg_box (word):
+    return "+" + ((len(word)+ 4)*"-") + "+" + "\n" + "|" + (2*" ") + (word) + (2*" ") + "|" + "\n" + "+" + ((len(word) +4)*"-") + "+"
+print msg_box ("I eat cats!")
