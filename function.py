@@ -40,6 +40,7 @@ print avg_volume(10, 20)
 def area (a, b, c):
 	return math.sqrt (2.75*(2.75-a)*(2.75-b)*(2.75-c))
 print area (1.0, 2.0, 2.5)
+
 def right_align (word):
 	return (80-len(word))*(" ")+word
 print right_align ("Hello")
@@ -47,6 +48,7 @@ print right_align ("Hello")
 def center (word):
 	return (40-len(word))*(" ")+word
 print center ("Hello")
+
 def msg_box (word):
-    return msg_box(word)
+    return "+" + ((len(word)+4)"-")+"+"+"\n"+"|
 print ("Hello")
