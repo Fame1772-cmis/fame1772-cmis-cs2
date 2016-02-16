@@ -59,5 +59,41 @@ print c
 c= mul (4, 4)
 d= div (2.0, 3.0)
 print d
-prin
-
+d= div (2.0, 3.0)
+print d 
+e= hours_from_seconds (86400)
+print e
+e= hours_from_seconds (86400)
+print e
+f= circle_area (5)
+print f
+f= circle_area (5)
+print f
+g= sphere_volume (5)
+print g
+g = sphere_volume (5)
+print g
+h= avg_volume (10, 20)
+print h
+h= avg_volume (10, 20)
+print h
+i= area (1.0, 2.0, 2.5)
+print i
+i= area (1.0, 2.0, 2.5)
+print i
+j= right align ("Hello")
+print j
+j= right_align ("Hello")
+print j
+k= center ("Hello")
+print k
+k= center ("Hello")
+print k
+l= msg_box ("Hello")
+print l
+l= msg_box ("Hello")
+print l
+m= msg_box ("I eat cats!")
+print m
+m= msg_box ("I eat cats!")
+print m
