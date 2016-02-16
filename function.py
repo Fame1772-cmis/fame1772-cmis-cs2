@@ -1,24 +1,14 @@
 def add (a, b):
 	return a + b
 
-c= add (3, 4)
-print c
-
 def sub (d, e):
 	return d - e
 
-f= sub (5, 3)
-print f
 def mul (g, h):
 	return g * h
 
-i=mul (4, 4)
-print i
-
 def div (j, k):
 	return (j / k)
-l=div (2.0, 3.0)
-print l
 
 def hours_from_seconds (a):
 	return a / 3600
@@ -56,3 +46,18 @@ print msg_box ("Hello")
 def msg_box (word):
     return "+" + ((len(word)+ 4)*"-") + "+" + "\n" + "|" + (2*" ") + (word) + (2*" ") + "|" + "\n" + "+" + ((len(word) +4)*"-") + "+"
 print msg_box ("I eat cats!")
+a= add (3, 4)
+print a
+a= add (3,4)
+print a
+b= sub (5, 3)
+print b
+b= sub (5,3)
+print b
+c= mul (4, 4)
+print c
+c= mul (4, 4)
+d= div (2.0, 3.0)
+print d
+prin
+
