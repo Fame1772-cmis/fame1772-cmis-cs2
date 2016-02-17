@@ -73,19 +73,4 @@ i= area (1.0, 2.0, 2.5)
 print i
 i= area (1.0, 2.0, 2.5)
 print i
-j= right align ("Hello")
-print j
-j= right_align ("Hello")
-print j
-k= center ("Hello")
-print k
-k= center ("Hello")
-print k
-l= msg_box ("Hello")
-print l
-l= msg_box ("Hello")
-print l
-m= msg_box ("I eat cats!")
-print m
-m= msg_box ("I eat cats!")
-print m
+
