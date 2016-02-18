@@ -73,4 +73,19 @@ i= area (1.0, 2.0, 2.5)
 print i
 i= area (1.0, 2.0, 2.5)
 print i
-
+j= right_align("Hello")
+print j
+j= right_align ("Hello")
+print j
+k= center ("Hello")
+print k
+k= center ("Hello")
+print k
+message= msg_box ("Hello")
+print message
+message= msg_box ("Hello")
+print message
+message_2= msg_box ("Hello")
+print message_2
+message_2 msg_box ("Hello")
+print message_2
