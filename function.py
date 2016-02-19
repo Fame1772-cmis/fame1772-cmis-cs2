@@ -1,38 +1,38 @@
-def add (a, b):
+def add (a, b): #Adds variable a with variable b
 	return a + b
 
-def sub (d, e):
+def sub (d, e): #Subtracts variable d from variable e
 	return d - e
 
-def mul (g, h):
+def mul (g, h): #Multiplies variable g with variable h
 	return g * h
 
-def div (j, k):
+def div (j, k): #Divides variable j from varable k
 	return (j / k)
 
-def hours_from_seconds (a):
+def hours_from_seconds (a): #The number of seconds is taken to find the number of hours
 	return a / 3600
 
 import math
-def circle_area (a):
+def circle_area (a): #The radius of the circle is taken to find the area of the circle.
 	return math.pi * (a**2)
 
-def sphere_volume (a):
+def sphere_volume (a): #The radius of the sphere is used to find the volume of the circle
 	return 1.33333333333 * math.pi * (a**3)
 
-def avg_volume (a, b):
-	 return ((1.0/6 * math.pi * a**3) + (1.0/6 * math.pi * b**3)) /2
+def avg_volume (a, b): #The diameters of a sphere is used to find the average of the volumes
+	 return ((1.0/6 * math.pi * a**3) + (1.0/6 * math.pi * b**3)) /2 
 
-def area (a, b, c):
+def area (a, b, c): #The three sides of a triangle is used to find the area
 	return math.sqrt (2.75*(2.75-a)*(2.75-b)*(2.75-c))
 
-def right_align (word):
+def right_align (word): #The word will be right aligned on the screen
 	return (80-len(word))*(" ")+word
 
-def center (word):
+def center (word): #The word will be centered on the screen
 	return (40-len(word))*(" ")+word
 
-def msg_box (word):
+def msg_box (word): #The word is put in a message box
     return "+" + ((len(word)+ 4)*"-") + "+" + "\n" + "|" + (2*" ") + (word) + (2*" ") + "|" + "\n" + "+" + ((len(word) +4)*"-") + "+"
     
 a1= add (3, 4)
