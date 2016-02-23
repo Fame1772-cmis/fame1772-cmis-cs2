@@ -17,12 +17,12 @@ import math
 def circle_area (a): #The radius of the circle is taken to find the area of the circle.
 	return math.pi * (a**2)
 
-def sphere_volume (a): #The radius of the sphere is used to find the volume of the circle
-	return 1.33333333333 * math.pi * (a**3)
+def sphere_volume (radius): #The radius of the sphere is used to find the volume of the circle
+	return 1.33333333333 * math.pi * (radius**3)
 
-def avg_volume (a, b): #The diameters of a sphere is used to find the average of the volumes
-    sphere1=1.0/6 * math.pi * a**3 
-    sphere2=1.0/6 * math.pi * b**3
+def avg_volume (diameters1, diameters2): #The diameters of a sphere is used to find the average of the volumes
+    sphere1=sphere_volume(diameters1/2)
+    sphere2=sphere_volume(diameters2/2)
     return(sphere1+sphere2)/2
 
 def area (a, b, c): #The three sides of a triangle is used to find the area
