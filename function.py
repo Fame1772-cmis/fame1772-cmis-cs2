@@ -21,7 +21,9 @@ def sphere_volume (a): #The radius of the sphere is used to find the volume of t
 	return 1.33333333333 * math.pi * (a**3)
 
 def avg_volume (a, b): #The diameters of a sphere is used to find the average of the volumes
-	 return ((1.0/6 * math.pi * a**3) + (1.0/6 * math.pi * b**3)) /2 
+    sphere1=1.0/6 * math.pi * a**3 
+    sphere2=1.0/6 * math.pi * b**3
+    return(sphere1+sphere2)/2
 
 def area (a, b, c): #The three sides of a triangle is used to find the area
 	return math.sqrt (2.75*(2.75-a)*(2.75-b)*(2.75-c))
@@ -36,7 +38,7 @@ def msg_box (word): #The word is put in a message box
     return "+" + ((len(word)+ 4)*"-") + "+" + "\n" + "|" + (2*" ") + (word) + (2*" ") + "|" + "\n" + "+" + ((len(word) +4)*"-") + "+"
     
 a1= add (3, 4)
-a2= add (4, 5)
+a2= add(4, 5)
 b1= sub (5, 3)
 b2= sub (6,7)
 c1= mul (4, 4)

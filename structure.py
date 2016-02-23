@@ -1,18 +1,19 @@
-def mul (x, y)
+def mul (x, y):
 	return x * y
 	
-def output (name, x)
-	left_to_live="""
+def output (p1, p2, len(name), x):
+	love_posibility="""
+
 Hey {}!
-You have {} years left to live
-	return left_to_live
-	
+Your love posibility with {} is {}
+	return love_posibility
+""". format(p1, p2, len(name), x):
 def main ():
-	name=
-	z=
-	y=
-	
-	x=mul (int(z), int(y))
+	p1= raw_input("What is your name?:")
+	p2=raw_input("Type your partner's name:")
+	x=raw_input("Type your fvorite number:")
+
+	love_possibility=mul (int(p1), int(p2))
 	left_to_live=output(name, x)
-	print ""
+print left_to_live
 main ()
