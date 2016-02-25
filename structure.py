@@ -1,19 +1,23 @@
-def mul (x, y):
-	return x * y
+def mul (z, y, x):
+	return z * y * x
 	
-def output (p1, p2, len(name), x):
+def output (p1, p2, love):
 	love_posibility="""
-
 Hey {}!
-Your love posibility with {} is {}
+Your love posibility with {} is {}%
+Good luck with LOVE! <3
+Please pay 100 baht before you exit!
+""". format(p1, p2, love)
 	return love_posibility
-""". format(p1, p2, len(name), x):
+
 def main ():
 	p1= raw_input("What is your name?:")
-	p2=raw_input("Type your partner's name:")
-	x=raw_input("Type your fvorite number:")
+	z= len(p1)
+	p2=raw_input("What is your partner's name?:")
+	y=len(p2)
+	x=raw_input("What is your fvorite number?:")
 
-	love_possibility=mul (int(p1), int(p2))
-	left_to_live=output(name, x)
-print left_to_live
+	love=mul (int(z), int(y), int(x))
+	love_possibility=output(p1, p2, love)
+	print love_possibility
 main ()
