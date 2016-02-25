@@ -15,7 +15,7 @@ def main ():
 	z= len(p1)
 	p2=raw_input("What is your crush's name?:")
 	y=len(p2)
-	x=raw_input("What is your fvorite number?:")
+	x=raw_input("What is your favorite number?:")
 
 	love=possiblelove (int(z), int(y), int(x))
 	love_possibility=output(p1, p2, love)
