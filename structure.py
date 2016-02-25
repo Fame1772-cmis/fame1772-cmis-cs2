@@ -1,4 +1,4 @@
-def mul (z, y, x):
+def possiblelove (z, y, x):
 	return z * y * x
 	
 def output (p1, p2, love):
@@ -13,11 +13,11 @@ Please pay 100 baht before you exit!
 def main ():
 	p1= raw_input("What is your name?:")
 	z= len(p1)
-	p2=raw_input("What is your partner's name?:")
+	p2=raw_input("What is your crush's name?:")
 	y=len(p2)
 	x=raw_input("What is your fvorite number?:")
 
-	love=mul (int(z), int(y), int(x))
+	love=possiblelove (int(z), int(y), int(x))
 	love_possibility=output(p1, p2, love)
 	print love_possibility
 main ()
