@@ -50,7 +50,7 @@ def radius (C1, C2, C3):
     return diameter2
     return diameter3
 
- def output (diameter1, diameter2, diameter3):
+ def output (diameter1, diameter2, diameter3,Total):
     diameter="""
     Circle
     C1
@@ -72,5 +72,6 @@ def main ():
     diameter2=(int(2)*(math.sqrt(C2/pi)))
     diameter3=(int(2)*(math.sqrt(C3/pi)))
     diameter=output(diameter1, diameter2, diameter3)
+    Total diameter1 + diameter2 + diameter3
     print diameter    
 main()
