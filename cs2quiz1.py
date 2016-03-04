@@ -1,4 +1,5 @@
-#Part 1: Terminology (15 points)
+# Terminology total=14.5 program total=13.5
+#Part 1: Terminology (15 points) Total: 
 #1 1pt) What is the symbol "=" used for?
 # The assignment operator is used to put a value into a variable.
 # 1pt right answer
@@ -44,21 +45,21 @@
 #TOTALS  ...
 
 # Hint: Radius is the square root of the area divided by pi
-#1 pt for header line 
-#3 pt for correct formula
-#1 pt for return value
-#1 pt for parameter name
-#1 pt for function name
+#1 pt for header line 1pt correct
+#3 pt for correct formula 0pt no formula
+#1 pt for return value 0pt wrong 
+#1 pt for parameter name 0pt wrong
+#1 pt for function name 1pt right, said radius
 import math
 def radius (C1, C2, C3):
     return diameter1
     return diameter2
     return diameter3
-#1pt for header line
-#1pt for parameter names
-#1pt for return value
-#1pt for correct output format
-#3pt for correct use of format function
+#1pt for header line 1pt correct
+#1pt for parameter names 1pt correct
+#1pt for return value 1pt returned diameter
+#1pt for correct output format 0.5pt didn't follow format layout
+#3pt for correct use of format function 2pt incorrect number of arguments to {}
  def output (diameter1, diameter2, diameter3,Total):
     diameter="""
     Circle
@@ -72,12 +73,12 @@ def radius (C1, C2, C3):
     {}
    """. format(diameter1, diameter2, diameter3)
     return diameter
-#1pt header line
-#1pt getting input
-#1pt converting input
-#1pt for calling output function
-#2pt for correct diameter formula
-#1pt for variable names
+#1pt header line 1 pt correct
+#1pt getting input 1 pt input gotten
+#1pt converting input 0pt didn't convert
+#1pt for calling output function 0 pt didnt call output
+#2pt for correct diameter formula 2 pt formula correct
+#1pt for variable names 1 pt correct
 def main (): 
     C1= raw_input("Area of C1:")
     C2= raw_input("Area of C2:")
@@ -91,4 +92,4 @@ def main ():
 #1pt for calling main 1 pt
 main()
 #1pt explanatory comments 0 pt
-#1pt code format
+#1pt code format 0pt no spacing
