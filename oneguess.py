@@ -1,14 +1,26 @@
-def ():
-	return
-def output ():
+import random
+def number(mini, maxi):
+	return 
+
+def output (target, guess, wrong):
 	out = """
-""". format ()
+	
+The target was {}
+Your guess was {}
+That's under by {}
+""". format (target, guess, wrong)
 	return out
+
 def main ():
 	mininum= raw_input ("What is the minimum number?:") 
 	maximum= raw_input ("What is the maximum number?:") 
-	thinking= raw_input ("I'm thinking of a number:")
+	print "I'm thinking of a number from int(minimum) to int(maximum)"
 	answer= raw_input ("What do you think it is?:")
-	target= raw_input ("The target was:")
-	guess= raw_input ("Your guess was:")
-That's under by 2.
+	target = random.randint((), ())
+	if answer==target:
+	
+	out=output(target, guess, wrong)
+	print output
+	
+main ()
+mini, 
