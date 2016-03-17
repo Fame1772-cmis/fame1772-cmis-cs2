@@ -1,50 +1,32 @@
 import random
-def number(minimum, maximum):
-	return target
-
-def bigguess (target, guess, result):
-	out = """
-	
-The target was {}
-Your guess was {}
-That's under by {}
-""". format (target, guess, result)
-	return out
-def smallguess (target, guess, result):
-	out = """
-	
-The target was {}
-Your guess was {}
-That's under by {}
-""". format (target, guess, result)
-	return out
-def rightguess (target, guess, result):
-	out = """
-	
-The target was {}
-Your guess was {}
-That's under by {}
-""". format (target, guess, result)
-	return out
-
 def main ():
-	mininum= raw_input ("What is the minimum number?:") 
-	maximum= raw_input ("What is the maximum number?:") 	
-	think= raw_input ("I'm thinking of a number from" + str(minimum) "to" + str(maximum) + "./n" "What do you think it is?:")
-	if target > str(abs(guess)):
-	guess1=smallguess(target, guess, result)
-	print guess1
-	elif target < str(abs(guess)):
-	guess2= bigguess (target, guess, result)
-	print guess2
-	elif target == str(abs(guess)):
-	guess3= rightguess (target, guess, result)
-	elif target== str(abs(guess)):
-	print guess3
+	minimum = int(raw_input ("What is the minimum number? >>>"))
+	maximum = int(raw_input ("What is the maximum number? >>> "))
+	target = random.randint(minimum, maximum)
+	print "I'm thinking of a number from" , minimum, "to" , maximum
+	guess = int(raw_input("What do you think it is?>>> "))
+   
+	if target > guess:
+		result1 = target - guess
+		print """
+The target was {}.
+Your guess was {}.
+That's under by {}.
+""" . format (target, guess, result1)
 
-		
-	
-	out=output(target, guess, wrong)
-	print out
-	
-main () 
+	elif target < guess: 
+		result2 = guess - target
+		print  """
+The target was {}.
+Your guess was {}.
+That's overp by {}.
+""" . format (target, guess, result2)
+
+	elif target == guess: 
+		print """
+You are correct!
+The target was {}.
+Your guess was {}.
+""" . format (target, guess)
+main()
+
