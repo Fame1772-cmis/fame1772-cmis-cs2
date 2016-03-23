@@ -1,5 +1,5 @@
 def possiblelove (Userlen, Crushlen, Favnum):
-	return Userlen ** Crushlen / Favnum
+	return (Userlen ** Crushlen) % Favnum
 	
 def output (User, Crush, love):
 	love_posibility="""
