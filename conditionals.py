@@ -1,66 +1,20 @@
-def output (User):
+#The computer will take determine the age at which you start you occupation, and what your occupation might be.
+import random
+def agecalculations(Currentage, Finishschool, Thinkstartwork):
+	return (Currentage * Finishschool) / Thinkstartwork
+
+def output (User, Userages):
 	Workage="""
 Hey {}!
 You will begin working at {}!
-""". format (User)
+""". format (User, Userages)
 	return Workage
 
 def age (User):
-	Userlen= len(User)
-	Currentage= float(raw_input ("How old are you?"))
-	Finishschool= float(raw_input ("At what age do you think that you will finish school?"))
-	Thinkstartwork= float(raw_input ("At what age do you want to start working?"))
-	return ((Userlen ** Currentage) / (Finishschool ** Thinkstartwork))
-
-def main ():
-	User= raw_input("What is your name?")
-	kj = age (User)
-	asfd = output (User)
-	
-main ()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#The computer will take determine the age at which you start you occupation, and what your occupation might be.
-import random
-def ageforwork (Workage):
-	return (Userlen ** Currentage / Finishschool % Thinkstartwork)
-
-def output (User, Workage):
-	Workage="""
-Hey {}!
-You will begin working at {}!
-""". format (User, Workage)
-	return Workage
-
-def age ():
-	User= raw_input("""What is your name?""")
-	Userlen= len(User)
-	Currentage= raw_input ("""How old are you?""")
-	Finishschool= raw_input ("""At what age do you think that you will finish school?""")
-	Thinkstartwork= raw_input ("""At what age do you want to start working?""") 
-	return age
-
-def Ageatwork ():
-	Working=ageforwork (int(Userlen), int(Currentage), int(Finishschool), int(Thinkstartwork))
-	Workage=output(User, Workage)
-	print workage
-	return Ageatwork
+	Currentage= int(raw_input ("How old are you?"))
+	Finishschool= int(raw_input ("At what age do you think that you will finish school?"))
+	Thinkstartwork= int(raw_input ("At what age do you want to start working?"))
+	return (Currentage * Finishschool) / Thinkstartwork
 
 def Occupationoptions ():
 	Freetime= raw_input ("""
@@ -140,11 +94,11 @@ Answer (Type: a, b, or c)
 		else: 
 			print "Congratulations, you were born to be a director!"
 def main ():
-	workingage= ageforwork (Workage)
-	out= output (User, Workage)
-	allages= age()
-	Agework= Ageatwork()
+	User= raw_input("What is your name?")
+	Userages = age (User)
+	Startwork = output (User, Userages)
 	Joboptions=Occupationoptions()
-	print out
+	print Startwork
+	print output
 main ()
 
