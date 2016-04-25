@@ -72,14 +72,14 @@ Answer (Type: a, b, c, d)
 		    print "Congratulations, you were born to be both a singer and a dancer!"
 		elif first and second == "a" and "c":
 		    print "Congratulations, you were born to be both a singer and a composer!"
-	    elif first and second == "a" and "c":
-	        print "Congratulations, you were born to be both a singer and a musician!"
-	    elif first and second == "b" and "c":
-	        print  "Congratulations, you were born to be both a dancer and a composer!"
-	    elif first and second == "b" and "d": 
-	        print "Congratulations, you were born to be both a dancer and a musician!"
-        else:
-            print "Congratulations, you were born to be both a composer and a musician!"
+	    	elif first and second == "a" and "c":
+	        	print "Congratulations, you were born to be both a singer and a musician!"
+	    	elif first and second == "b" and "c":
+	        	print  "Congratulations, you were born to be both a dancer and a composer!"
+	    	elif first and second == "b" and "d": 
+	        	print "Congratulations, you were born to be both a dancer and a musician!"
+        	else:
+           		 print "Congratulations, you were born to be both a composer and a musician!"
             
 
 	elif Freetime == "d":
@@ -88,20 +88,20 @@ Answer (Type: a, b, c, d)
 	elif Freetime == "e":
 	        print "Congratulations, you were born to be a gardener!"
 	        
-    elif Freetime == "f":
-	    Filming= raw_input ("""
+	elif Freetime == "f":
+		Filming= raw_input ("""
 What do you like to do?
 a. Acting
 b. Filming
 Answer (Type: a or b)
 """)
-	    if Filming == "a":
-		    print "Congratulations, you were born to be a actor/actress!"
-	    else: 
-		    print "Congratulations, you were born to be a director!"
+	if Filming == "a":
+		print "Congratulations, you were born to be a actor/actress!"
+	else: 
+		print "Congratulations, you were born to be a director!"
 	
 	else:
-        Computer= raw_input ("""
+        	Computer= raw_input ("""
 What do you like to do?
 a. Play computer games
 b. Programming
