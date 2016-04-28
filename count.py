@@ -29,20 +29,18 @@ def countdown_from(start, stop):
 
 countdown_from(1, 10)
 
-def adder():
-	runtotal= 0
-	print "Running total:" + str(runtotal)
+def adder(runtotal, nxtnum):
 	nxtnum= float(raw_input("Next number:"))
-	total= (float(nxtnum) + float(runtotal))
-	if nxtnum=="":
-		print "The sum is" + str(total)
+	if nxtnum== "":
+		return "The sum is " + str(runtotal)
 	else:
-		print "Running total:" + str(total)
-		print nxtnum
-
-adder()
-
+		runtotal += nxtnum
+		print "Running total:" + str(runtotal)
+		return adder(runtotal, nxtnum)
 def main():
 	countdown(10)
 	countup(-5)
+	def main():
+	ans = adder (0,0)
+	print ans
 main()
