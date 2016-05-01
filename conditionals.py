@@ -55,7 +55,7 @@ Answer (Type: a or b)
 		if Study == "a":
 			print "Congratulations, you were born to be a writer!"
 		else:
-			print "Congratulatinos, you were born to be a scientist!"
+			print "Congratulations, you were born to be a scientist!"
 
 	elif Freetime == "c":
 		Melody= raw_input ("""
