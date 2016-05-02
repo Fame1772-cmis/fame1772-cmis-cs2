@@ -105,15 +105,13 @@ What do you like to do?
 a. Play computer games
 b. Programming
 c. Online shopping
-d. None of the above
 Answer (Type: a, b, c or d)
 """)
-		if Computer == "a" or "b":
+		if Computer == "a" or if Computer == "b":
 			print "Congratulations, you were born to be a computer game programmer!"
-		elif Computer == not "a" and "b": 
+		elif Computer == not("a") and if Computer == not("b"): 
 			print "Congratulations, you were born to be a clothes designer!"
-        else:
-            print "Sorry, but you have to look at other job options!"
+        
 def main ():
 	User= raw_input("What is your name?")
 	Currentage= int(raw_input ("How old are you?"))
