@@ -1,15 +1,24 @@
-import random
-def game ():
-	guess = raw_input ("Guess a number:")
-	target = random.randint(0, 100)
-
-	if target == guess:
-		print "Correct"
-
+def trials (tries, limit):
+	if int(tries) == int(limit):
+		return game()
 	else: 
-		if int(target) > int(guess):
-			print "Too high"
-		elif int(target) < int(guess):
-			print "Too low"
-		game()
-game()
+		print tries
+		trials(tries-1,limit)
+
+def game(target):
+	if target == guess:
+		return "Correct"
+	else: 
+		if int(guess) > int(target):
+			return "Too high"
+		elif int(guess) < int(target):
+			return "Too low"
+
+def main ():
+	trials(6,0)
+	import random
+	target=random.randint(0, 100)
+	game ()
+main ()
+
+
