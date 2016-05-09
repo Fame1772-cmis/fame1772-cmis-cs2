@@ -8,12 +8,12 @@ def quitjob ():
 	return randnum
     
 def output (User, agecalculations, randnum):
-	Workage="""
+	Workingage="""
 Hey {}!
 You will begin working at {}!
 You will quit this job in {} years!
 """. format (User, agecalculations, randum)
-	return Workage
+	return Workingage
 	
 def Occupationoptions ():
 	Freetime= raw_input ("""
@@ -98,7 +98,7 @@ What do you like to do?
 a. Play computer
 b. Programming
 c. Online shopping
-Answer (Type: a, b, c or d)
+Answer (Type: a, b or c)
 """)
 		if Computer == "a" or Computer == "b":
 			return "Congratulations, you were born to be a computer game programmer!"
@@ -111,16 +111,16 @@ def main ():
 	Finishschool= raw_input ("At what age do you think that you will finish college?")
 	Thinkstartwork= raw_input ("At what age do you want to start working?")
 	if int(Currentage) >= 20:
-		return True
+		print True
 	else:
-		return False
+		print False
 		if Currentage == True:
 			print "It's time to think about your future."
 		else:
 			print "You still have some time to think about your future."
-
+	workage=Workingage
 	calc= agecalculations (int(Currentage), int(Finishschool), int(Thinkstartwork))
-	out=output(User, Workingage, randnum)
+	out=output(User, workage, randnum)
 	joboptions= Occupationoptions()
 
 main ()
