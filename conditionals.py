@@ -5,14 +5,14 @@ def agecalculations(Currentage, Finishschool, Thinkstartwork):
 
 def quitjob ():
 	randnum = random.randint(0, 99)
-	return quitjob
+	return randnum
     
-def output (User, Workingage, Endjob):
+def output (User, agecalculations, randnum):
 	Workage="""
 Hey {}!
 You will begin working at {}!
 You will quit this job in {} years!
-""". format (User, Workingage, Endjob)
+""". format (User, agecalculations, randum)
 	return Workage
 	
 def Occupationoptions ():
@@ -22,28 +22,18 @@ a. Sports
 b. Reading & Writing
 c. Music
 d. Photography
-e Gardening
-f. Filming
-g. Computer
-Answer (Type: a, b, c, d, e, f or g)
+e. Filming
+f. Computer
+Answer (Type: a, b, c, d, e, or f)
 """)
 	if Freetime == "a":
 		Sports= raw_input ("""
 What sports do you like?
 a. Basketball
-b. Volleyball
-c. Soccer
-d. Badminton
-Answer (Type: a, b, c, or d)
+Answer (Type: a)
 """)
 		if Sports == "a":
-			print "Congratulations, you were born to be a basketball player!"
-		elif Sports == "b": 
-			print "Congratulations, you were born to be a volleyball player!"
-		elif Sports == "c":
-			print "Congratulations, you were born to be a soccer player!"
-		else:
-			print "Congratulations, you were born to be a badminton player!"
+			return "Congratulations, you were born to be a basketball player!"
 
 	elif Freetime == "b":
 		Study= raw_input ("""
@@ -53,9 +43,9 @@ b. Non-fiction
 Answer (Type: a or b)
 """)
 		if Study == "a":
-			print "Congratulations, you were born to be a writer!"
+			return "Congratulations, you were born to be a writer!"
 		else:
-			print "Congratulations, you were born to be a scientist!"
+			return "Congratulations, you were born to be a scientist!"
 
 	elif Freetime == "c":
 		Melody= raw_input ("""
@@ -69,23 +59,26 @@ Answer (Type: a, b, c, or d)
 		first= raw_input ("1:")
 		second= raw_input ("2:")
 		if first and second == "a" and "b":
-			print "Congratulations, you were born to be both a singer and a dancer!"
+			return "Congratulations, you were born to be both a singer and a dancer!"
 		elif first and second == "a" and "c":
-			print "Congratulations, you were born to be both a singer and a composer!"
+			return "Congratulations, you were born to be both a singer and a composer!"
 		elif first and second == "a" and "c":
-			print "Congratulations, you were born to be both a singer and a musician!"
+			return "Congratulations, you were born to be both a singer and a musician!"
 		elif first and second == "b" and "c":
-			print  "Congratulations, you were born to be both a dancer and a composer!"
+			return  "Congratulations, you were born to be both a dancer and a composer!"
 		elif first and second == "b" and "d": 
-			print "Congratulations, you were born to be both a dancer and a musician!"
+			return "Congratulations, you were born to be both a dancer and a musician!"
 		else:
-			print "Congratulations, you were born to be both a composer and a musician!"
+			return "Congratulations, you were born to be both a composer and a musician!"
             
 	elif Freetime == "d":
-		print "Congratulations, you were born to be a photographer!"
-	
-	elif Freetime == "e":
-		print "Congratulations, you were born to be a gardener!"
+		photos= raw_input ("""
+What do you like to do?
+a. Take pictures
+Answer (Type: a)
+""")
+		if photos == "a":
+			return "Congratulations, you were born to be a photographer!"
 	        
 	elif Freetime == "f":
 		Filming= raw_input ("""
@@ -95,40 +88,39 @@ b. Filming
 Answer (Type: a or b)
 """)
 		if Filming == "a":
-			print "Congratulations, you were born to be a actor/actress!"
+			return "Congratulations, you were born to be a actor/actress!"
 		else: 
-			print "Congratulations, you were born to be a director!"
+			return "Congratulations, you were born to be a director!"
 	
 	else:
 		Computer= raw_input ("""
 What do you like to do?
-a. Play computer games
+a. Play computer
 b. Programming
 c. Online shopping
 Answer (Type: a, b, c or d)
 """)
-		if Computer == "a" or if Computer == "b":
-			print "Congratulations, you were born to be a computer game programmer!"
-		elif Computer == not("a") and if Computer == not("b"): 
-			print "Congratulations, you were born to be a clothes designer!"
+		if Computer == "a" or Computer == "b":
+			return "Congratulations, you were born to be a computer game programmer!"
+		elif not Computer == "a" and not Computer == "b": 
+			return "Congratulations, you were born to be a clothes designer!"
         
 def main ():
 	User= raw_input("What is your name?")
-	Currentage= int(raw_input ("How old are you?"))
-	Finishschool= int(raw_input ("At what age do you think that you will finish college?"))
-	Thinkstartwork= int(raw_input ("At what age do you want to start working?"))
+	Currentage= raw_input ("How old are you?")
+	Finishschool= raw_input ("At what age do you think that you will finish college?")
+	Thinkstartwork= raw_input ("At what age do you want to start working?")
 	if int(Currentage) >= 20:
 		return True
-	elif int(Currentage) <= 19:
+	else:
 		return False
 		if Currentage == True:
 			print "It's time to think about your future."
 		else:
 			print "You still have some time to think about your future."
-	Workingage = agecalculations (int(Currentage), int(Finishschool), int(Thinkstartwork))
-	Startwork = output (User, Workingage)
-	Endjob = quitjob ()
-	Joboptions=Occupationoptions()
-	print Startwork
-	print output
+
+	calc= agecalculations (int(Currentage), int(Finishschool), int(Thinkstartwork))
+	out=output(User, Workingage, randnum)
+	joboptions= Occupationoptions()
+
 main ()
