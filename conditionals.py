@@ -6,7 +6,7 @@ def agecalculations(Currentage, Finishschool, Thinkstartwork):
 def oldoryoung(Currentage):
 	if int(Currentage) >= 20:
 		return True
-	else:
+	elif int(Currentage) <= 19:
 		return False	   
    
 def thinkfuture(oldoryoung):
@@ -112,7 +112,7 @@ You will begin working at {}!
 You will hit a financial crisis at the age of {}.
 You will quit this job in {} years!
 """. format (User, calc, randomnum, randnum)
-	print out
+	return out
 	     
 def main ():
 	User= raw_input("What is your name?")
@@ -124,4 +124,5 @@ def main ():
 	randnum = random.randint(0,99)
 	randomnum = round(random.randint(0,50) * random.random())
 	out=output(User, calc, randomnum, randnum)
+	print out
 main ()
