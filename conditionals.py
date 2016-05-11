@@ -10,10 +10,10 @@ def oldoryoung(Currentage):
 		return False	   
    
 def thinkfuture(oldoryoung):
-    if oldoryoung == True:
-        return "It's time to think about your future."
-    else:
-        return "You still have some time to think about your future."
+	if oldoryoung == True:
+		return "It's time to think about your future."
+	else:
+		return "You still have some time to think about your future."
         
 def Occupationoptions ():
 	Freetime= raw_input ("""
@@ -57,18 +57,18 @@ Answer (Type: a, b, or c)
 """)
 		firstmelody= raw_input ("1:")
 		secondmelody= raw_input ("2:")
-        if firstmelody == "a" and secondmelody == "b":
-            print "Congratulations, you were born to be both a singer and a dancer!"
-        elif firstmelody == "a" and secondmelody == "c":
-            print "Congratulations, you were born to be both a singer and a musician!"   
-        elif firstmelody == "b" and secondmelody == "a":
-		print "Congratulations, you were born to be both a singer and a dancer!"
-        elif firstmelody == "b" and secondmelody == "c":
-            print "Congratulations, you were born to be both a dancer and a musician!"
-        elif firstmelody == "c" and secondmelody == "a":
-            print "Congratulations, you were born to be both a singer and a musician!"
-        elif firstmelody == "c" and secondmelody == "b":
-            print "Congratulations, you were born to be both a dancer and a musician!"
+		if firstmelody == "a" and secondmelody == "b":
+			print "Congratulations, you were born to be both a singer and a dancer!"
+		elif firstmelody == "a" and secondmelody == "c":
+			print "Congratulations, you were born to be both a singer and a musician!"   
+		elif firstmelody == "b" and secondmelody == "a":
+			print "Congratulations, you were born to be both a singer and a dancer!"
+		elif firstmelody == "b" and secondmelody == "c":
+			print "Congratulations, you were born to be both a dancer and a musician!"
+		elif firstmelody == "c" and secondmelody == "a":
+			print "Congratulations, you were born to be both a singer and a musician!"
+		else:
+			print "Congratulations, you were born to be both a dancer and a musician!"
 		
 	elif Freetime == "d":
 		photos= raw_input ("""
@@ -94,7 +94,7 @@ Answer (Type: a or b)
 	else:
 		Computer= raw_input ("""
 What do you like to do?
-a. Play computer
+a. Play computer games
 b. Programming
 c. Online shopping
 Answer (Type: a, b or c)
@@ -105,13 +105,13 @@ Answer (Type: a, b or c)
 			print "Congratulations, you were born to be a clothes designer!"
 Occupationoptions()
 
-def output (User, calc, random, randnum):
+def output (User, calc, randomnum, randnum):
 	out="""
 Hey {}! 
 You will begin working at {}!
-You will experience a financial crisis at the age of {}.
+You will hit a financial crisis at the age of {}.
 You will quit this job in {} years!
-""". format (User, calc, random, randnum)
+""". format (User, calc, randomnum, randnum)
 	print out
 	     
 def main ():
@@ -121,7 +121,7 @@ def main ():
 	Thinkstartwork= raw_input ("At what age do you want to start working?")
 	calc= agecalculations (int(Currentage), int(Finishschool), int(Thinkstartwork))
 	print thinkfuture(oldoryoung)
-	randnum = random.randint(0, 99)
-	random = random.random (0, 99)
-	out=output(User, calc, random, randnum)
+	randnum = random.randint(0,99)
+	randomnum = round(random.randint(0,50) * random.random())
+	out=output(User, calc, randomnum, randnum)
 main ()
