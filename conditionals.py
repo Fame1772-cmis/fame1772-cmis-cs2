@@ -62,7 +62,7 @@ Answer (Type: a, b, or c)
         elif firstmelody == "a" and secondmelody == "c":
             print "Congratulations, you were born to be both a singer and a musician!"   
         elif firstmelody == "b" and secondmelody == "a":
-			print "Congratulations, you were born to be both a singer and a dancer!"
+		print "Congratulations, you were born to be both a singer and a dancer!"
         elif firstmelody == "b" and secondmelody == "c":
             print "Congratulations, you were born to be both a dancer and a musician!"
         elif firstmelody == "c" and secondmelody == "a":
