@@ -48,7 +48,7 @@ Answer (Type: a or b)
 			return "Congratulations, you were born to be a scientist!"
 
 	elif Freetime == "c":
-		Melody= raw_input ("""
+		print ("""
 What do you like to do? Choose 2
 a. Sing
 b. Dance
@@ -56,17 +56,17 @@ c. Play Instruments
 d. Compose music
 Answer (Type: a, b, c, or d)
 """)
-		first= raw_input ("1:")
-		second= raw_input ("2:")
-		if first and second == "a" and "b":
+		firstmelody= raw_input ("1:")
+		secondmelody= raw_input ("2:")
+		if firstmelody and secondmelody == "a" and "b":
 			return "Congratulations, you were born to be both a singer and a dancer!"
-		elif first and second == "a" and "c":
+		elif firstmelody and secondmelody == "a" and "c":
 			return "Congratulations, you were born to be both a singer and a composer!"
-		elif first and second == "a" and "c":
+		elif firstmelody and secondmelody == "a" and "c":
 			return "Congratulations, you were born to be both a singer and a musician!"
-		elif first and second == "b" and "c":
+		elif firstmelody and secondmelody == "b" and "c":
 			return  "Congratulations, you were born to be both a dancer and a composer!"
-		elif first and second == "b" and "d": 
+		elif firstmelody and secondmelody == "b" and "d": 
 			return "Congratulations, you were born to be both a dancer and a musician!"
 		else:
 			return "Congratulations, you were born to be both a composer and a musician!"
@@ -80,7 +80,7 @@ Answer (Type: a)
 		if photos == "a":
 			return "Congratulations, you were born to be a photographer!"
 	        
-	elif Freetime == "f":
+	elif Freetime == "e":
 		Filming= raw_input ("""
 What do you like to do?
 a. Acting
@@ -106,14 +106,14 @@ Answer (Type: a, b or c)
 			return "Congratulations, you were born to be a clothes designer!"
 Occupationoptions()
 
-def output (User, oldoryoung, calc, numrand, Occupationoptions):
+def output (User, oldoryoung, agecalculations, numrand, Occupationoptions):
 	out="""
 Hey {}! 
 {}
 You will begin working at {}!
 You will quit this job in {} years!
 {}
-""". format (User, oldoryoung, calc, numrand, Occupationoptions)
+""". format (User, oldoryoung, agecalculations, numrand, Occupationoptions)
 	print out
 	     
 def main ():
@@ -121,8 +121,8 @@ def main ():
 	Currentage= raw_input ("How old are you?")
 	Finishschool= raw_input ("At what age do you think that you will finish college?")
 	Thinkstartwork= raw_input ("At what age do you want to start working?")
-	calc= agecalculations (int(Currentage), int(Finishschool), int(Thinkstartwork))
+	agecalculations (int(Currentage), int(Finishschool), int(Thinkstartwork))
 	randnum = random.randint(0, 99)
 	numrand=randnum
-	out=output(User, oldoryoung, calc, numrand, Occupationoptions)
+	out=output(User, oldoryoung, agecalculations, numrand, Occupationoptions)
 main ()
