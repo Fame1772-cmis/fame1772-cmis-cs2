@@ -1,20 +1,20 @@
 #The computer will take determine the age at which you start you occupation, and what your occupation might be.
 import random
 def agecalculations(Currentage, Finishschool, Thinkstartwork):
-	return (Currentage * Finishschool) // Thinkstartwork
+	print (Currentage * Finishschool) // Thinkstartwork
 
-def quitjob ():
-	randnum = random.randint(0, 99)
-	return randnum
-    
-def output (User, agecalculations, randnum):
-	Workingage="""
-Hey {}!
-You will begin working at {}!
-You will quit this job in {} years!
-""". format (User, agecalculations, randum)
-	return Workingage
+def oldoryoung(Currentage):
 	
+	if int(Currentage) >= 20:
+		return True
+	else:
+		return False
+		if Currentage == True:
+			print "It's time to think about your future."
+		else:
+			print "You still have some time to think about your future."
+	return oldoryoung	   
+
 def Occupationoptions ():
 	Freetime= raw_input ("""
 What do you like to do during your freetime? 
@@ -104,23 +104,25 @@ Answer (Type: a, b or c)
 			return "Congratulations, you were born to be a computer game programmer!"
 		elif not Computer == "a" and not Computer == "b": 
 			return "Congratulations, you were born to be a clothes designer!"
-        
+Occupationoptions()
+
+def output (User, oldoryoung, calc, numrand, Occupationoptions):
+	out="""
+Hey {}! 
+{}
+You will begin working at {}!
+You will quit this job in {} years!
+{}
+""". format (User, oldoryoung, calc, numrand, Occupationoptions)
+	print out
+	     
 def main ():
 	User= raw_input("What is your name?")
 	Currentage= raw_input ("How old are you?")
 	Finishschool= raw_input ("At what age do you think that you will finish college?")
 	Thinkstartwork= raw_input ("At what age do you want to start working?")
-	if int(Currentage) >= 20:
-		print True
-	else:
-		print False
-		if Currentage == True:
-			print "It's time to think about your future."
-		else:
-			print "You still have some time to think about your future."
-	workage=Workingage
 	calc= agecalculations (int(Currentage), int(Finishschool), int(Thinkstartwork))
-	out=output(User, workage, randnum)
-	joboptions= Occupationoptions()
-
+	randnum = random.randint(0, 99)
+	numrand=randnum
+	out=output(User, oldoryoung, calc, numrand, Occupationoptions)
 main ()
