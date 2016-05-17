@@ -17,7 +17,7 @@ def game (target, tries):
 		return 1
 
 def rounds(roundsies, correct, tries):
-	target = random.randint (0,2)
+	target = random.randint (0,1)
 	if roundsies == 0:
 		print correct
 	elif roundsies != 0:
