@@ -48,11 +48,11 @@
 #It is NOT NECESSARY to print out a running total with each user input.
 
 def series(oddaverage):
-	nxt= raw_input ("Next:") #basecase
+	nxt= raw_input ("Next:") #basecase +2
 	if nxt == "":
 		print output
 	else:
-		series(oddaverage) #recursivecase
+		series(oddaverage) #recursivecase +2
 
 def odd(nxt):
 	if nxt/2 == int:
@@ -66,7 +66,7 @@ The average of your odd numbers was {}
 	return out
 
 def main():
-	oddaverage=numbers/numofodd
+	oddaverage=numbers/numofodd +1
 	allnums=series(oddaverage)
 main()
 		
