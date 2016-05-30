@@ -44,7 +44,7 @@ def sumOfOdds(n):
 def grid (w,h):
 	out = ""
 	while h > 0:
-			
+		w = 10
 		while w > 0:
 			out += "."
 			w -= 1
